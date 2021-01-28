@@ -44,7 +44,8 @@ const server = app.listen(PORT, () => {
 
 const io = require("socket.io")(server, {
   cors: {
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
+    origin : "https://strongfitlife-frontend.herokuapp.com/",
     methods: ["GET", "POST", "PUT"]
   }
 });
